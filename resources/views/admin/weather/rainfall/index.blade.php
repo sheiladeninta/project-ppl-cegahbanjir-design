@@ -68,7 +68,7 @@
         </div>
 
         <div class="mt-6">
-            {{ $rainfallData->links('vendor.pagination.tailwind') }}
+            {{ $rainfallData->links() }}
         </div>
     @endif
 </div>

@@ -66,7 +66,7 @@
         </div>
 
         <div class="mt-6">
-            {{ $stations->links('vendor.pagination.tailwind') }}
+            {{ $stations->links() }}
         </div>
     @endif
 </div>
