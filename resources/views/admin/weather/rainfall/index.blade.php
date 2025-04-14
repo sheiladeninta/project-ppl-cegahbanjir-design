@@ -3,12 +3,13 @@
 @section('title', 'Manajemen Data Curah Hujan')
 
 @section('content')
-<div class="flex items-center justify-between mb-6 bg-white p-4 rounded shadow">
-    <h1 class="text-2xl font-semibold text-gray-800">Manajemen Data Curah Hujan</h1>
-    <a href="{{ route('admin.weather.rainfall.create') }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#f97316] rounded hover:bg-[#ea580c]">
-        <i class="fas fa-plus mr-2"></i> Tambah Data
-    </a>
-</div>
+<div class="bg-white shadow rounded-lg p-6 mb-10">
+    <div class="flex items-center justify-between mb-6">
+        <h1 class="text-2xl font-semibold text-gray-800">Manajemen Data Curah Hujan</h1>
+        <a href="{{ route('admin.weather.rainfall.create') }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#f97316] rounded hover:bg-[#ea580c]">
+            <i class="fas fa-plus mr-2"></i> Tambah Data
+        </a>
+    </div>
 
 <div class="bg-white shadow rounded-lg p-6 mb-10">
     @if($rainfallData->isEmpty())

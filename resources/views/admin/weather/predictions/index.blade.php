@@ -1,16 +1,17 @@
 @extends('layouts.admin')
 @section('title', 'Manajemen Prediksi Banjir')
 @section('content')
-    <div class="flex justify-between items-center mb-6">
-        <h1 class="text-2xl font-semibold">Manajemen Prediksi Banjir</h1>
-        <a href="{{ route('admin.weather.predictions.create') }}" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700">
-            <i class="fas fa-plus mr-2"></i> Tambah Prediksi
-        </a>
-    </div>
+    <div class="bg-white shadow rounded-lg p-6 mb-10">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-semibold text-gray-800">Manajemen Prediksi Banjir</h1>
+            <a href="{{ route('admin.weather.predictions.create') }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#f97316] rounded hover:bg-[#ea580c]">
+                <i class="fas fa-plus mr-2"></i> Tambah Prediksi
+            </a>
+        </div>
 
-    <div class="bg-white shadow rounded-lg p-6">
+    <div class="bg-white shadow rounded-lg p-6 mb-10">
         @if($predictions->isEmpty())
-            <div class="bg-blue-50 text-blue-800 text-sm p-4 rounded">
+            <div class="text-[#92400e] bg-[#ffedd5] p-4 rounded">
                 Belum ada data prediksi banjir. Silakan tambahkan prediksi baru.
             </div>
         @else

@@ -7,6 +7,7 @@
 
     <!-- Font: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Preload background -->
     <link rel="preload" as="image" href="{{ asset('images/background-banjir2.png') }}">

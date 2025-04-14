@@ -1,15 +1,16 @@
 @extends('layouts.admin')
 @section('title', 'Manajemen Parameter Peringatan Banjir')
 @section('content')
-    <div class="flex items-center justify-between mb-6">
-        <h1 class="text-2xl font-semibold">Manajemen Parameter Peringatan Banjir</h1>
-        <a href="{{ route('admin.weather.parameters.create') }}" class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md">
-            <i class="fas fa-plus mr-2"></i> Tambah Parameter
-        </a>
-    </div>
-    <div class="bg-white shadow rounded-lg p-6">
+    <div class="bg-white shadow rounded-lg p-6 mb-10">
+        <div class="flex items-center justify-between mb-6">
+            <h1 class="text-2xl font-semibold text-gray-800">Manajemen Parameter Peringatan Banjir</h1>
+            <a href="{{ route('admin.weather.parameters.create') }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#f97316] rounded hover:bg-[#ea580c]">
+                <i class="fas fa-plus mr-2"></i> Tambah Parameter
+            </a>
+        </div>
+    <div class="bg-white shadow rounded-lg p-6 mb-10">
         @if($parameters->isEmpty())
-            <div class="bg-blue-100 text-blue-800 p-4 rounded-md">
+            <div class="text-[#92400e] bg-[#ffedd5] p-4 rounded">
                 Belum ada parameter peringatan banjir yang ditentukan. Silakan tambahkan parameter baru.
             </div>
         @else
